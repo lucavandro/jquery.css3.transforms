@@ -4,6 +4,19 @@ jquery.css3.transforms
 jquery.css3.transforms lets you get and set rotate, translate, scale, skew and perspective via jQuery css and animate methods.
 
 
+Features
+======================
+- Cross browser support
+- Incremental and decremental setters support
+- You can use transformation with jQuery.aniamate (see the example below)
+
+Limitations
+======================
+- Matrix is not supported
+- You can only use single valued transformations e.g. translate(x,y) is not supported
+- Limited support for measurement units different from px and deg
+
+
 Example Usage
 -------------
 ```javascript
@@ -40,11 +53,11 @@ $("#square").css("scaleY", 1.2);
 $("#square").css("scaleZ", 1.2);
 
 // Skew (values in deg)
-$("#square").css("skewX, 30);
+$("#square").css("skewX", 30);
 $("#square").css("skewY", 30);
 
 //...this works as well
-$("#square").css("skewX, "30deg");
+$("#square").css("skewX", "30deg");
 $("#square").css("skewY", "30deg");
 
 // Perspective (values in px)
@@ -74,3 +87,6 @@ $("#square").css("rotate");
 
 // Animations
 $("#square").animate({ rotate: 20, translateX: 100}, 600);
+
+// Support detection
+$.transform.isSupported()

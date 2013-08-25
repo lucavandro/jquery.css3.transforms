@@ -15,7 +15,11 @@ $.browserCode = ->
 
 browserCode = do $.browserCode
 vendorPrefix = do $.vendorPrefix
-   
+
+$.transform = 
+  isSupported: ()->
+    typeof $("<div>").get(0).style["#{browserCode}Transform"] isnt "undefined"  
+    
 generateHook = (property, unit)->
   regExp = new RegExp("#{property}\\((-?\\d+\\.?\\d*)#{unit}\\)","ig")
   

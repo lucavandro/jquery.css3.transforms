@@ -45,11 +45,11 @@ $("#square").css("scaleY", 1.2);
 $("#square").css("scaleZ", 1.2);
 
 // Skew (values in deg)
-$("#square").css("skewX, 30);
+$("#square").css("skewX", 30);
 $("#square").css("skewY", 30);
 
 //...this works as well
-$("#square").css("skewX, "30deg");
+$("#square").css("skewX", "30deg");
 $("#square").css("skewY", "30deg");
 
 // Perspective (values in px)
@@ -79,6 +79,9 @@ $("#square").css("rotate");
 
 // Animations
 $("#square").animate({ rotate: 20, translateX: 100}, 600);
+
+// Support detection
+$.transform.isSupported()
 """
 
 tagsToReplace =
