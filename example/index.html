@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Ianus.github.io : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/default.css">
+   
+   <link rel="stylesheet" href="highlight.js/styles/xcode.css">
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   <script src="highlight.js/highlight.pack.js"></script>
+    <title>Ianus.github.io</title>
+    <style>
+     .wrapper{
+     	 border: 2px solid red;
+     	 padding: 1.5em;
+     	 width: 49%;
+     	 float: left;
+     }
+    	.square{
+    		width: 100px;
+    		height: 100px;
+    		background: blue;
+    		margin: auto;
+    	}
+    #example pre{
+    	margin-top: 25px;
+    }	
+    #example pre code{
+    	font-size: 75%;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header-wrap" class="outer">
+        <header class="inner">
+          <a id="forkme-banner" href="https://github.com/Ianus">View on GitHub <i class="icon-github icon-2x"></i></a>
+
+          <h1 id="project-title">Ianus.github.io</h1>
+          <h2 id="project-tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main-content-wrap" class="outer">
+      <section id="main-content" class="inner">
+      	<h3 id="page-title"><i class="icon-github icon-2x"></i>
+      		<a class="anchor" href="#welcome-to-github-pages"></a> - 
+      		<a id="download">
+      			<small> <i class="icon-download-alt"></i> download </small>
+      		</a>
+      	</h3>
+		<p id="page-comment"></p>
+
+		<pre><code id="code"></code></pre>
+		<h6>Demo</h6>
+		<div id="example">
+			<div id="counter"></div>
+			<div class="wrapper">
+				<div class="square"></div>
+				<pre><code> /* normal square (a div) */</code></pre>
+			</div>
+			<div class="wrapper">
+				<div class="square" id="rotate"></div>
+				<pre><code>$("#rotate.square").css("rotate", 45);</code></pre>
+			</div>
+			<div class="wrapper">
+				<div class="square" id="translate"></div>
+				<pre><code>$("#translate.square").css("translateX", 90);</code></pre>
+			</div>
+			<div class="wrapper">
+				<div class="square" id="scale"></div>
+				<pre><code>$("#scale.square").css("scale", 1.5);</code></pre>
+			</div>
+			<div class="wrapper">
+				<div class="square" id="skew"></div>
+				<pre><code>$("#skew.square").css("skewY", 15);</code></pre>
+			</div>
+			<div class="wrapper">
+				<div class="square" id="animate"></div>
+				<pre><code>$("#animate.square").animate({rotate: "+=360"}, 600)</code></pre>
+			</div>
+			<script src="js/jquery-1.10.2.min.js"></script>
+			<script src="js/jquery.css3.transforms.js"></script>
+			<script>
+			$( function(){
+			    $("#rotate.square").css("rotate", 45);
+			    $("#skew.square").css("skewY", 15);
+			    $("#scale.square").css("scale", 1.5);
+			    $("#translate.square").css("translateX", 90);
+			    setInterval(
+			    	function(){$("#animate.square").animate({rotate: "+=360"}, 600);},600
+			    	); 
+			 });
+			</script>
+		</div>
+	</section>
+	
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer-wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+   
+    <script src="js/source.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </body>
+</html>
