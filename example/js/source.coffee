@@ -1,8 +1,7 @@
-title = "jQuery.keyframes"
+title = "jquery.css3.transforms"
 comment = """
-<p><a href="https://github.com/Ianus/jQuery.Keyframes">jQuery.Keyframes</a> is forked from <a href="https://github.com/krazyjakee/">@krazyjakee</a>'s <a href="https://github.com/krazyjakee/jQuery-Keyframes/">jQuery-Keyframes</a></p>
-<p><a href="https://github.com/Ianus/jQuery.Keyframes">jQuery.Keyframes</a> like <a href="https://github.com/krazyjakee/jQuery-Keyframes/">jQuery-Keyframes</a> generates and plays CSS3 keyframes quickly and easily allowing you to concentrate on the content of your project whilst cutting down code.</p>
-<p><a href="https://github.com/Ianus/jQuery.Keyframes">jQuery.Keyframes</a> introduces</p>
+<p>jquery.css3.transforms lets you get and set rotate, translate, scale, skew and perspective via jQuery css and animate methods.
+</p>
 <ul>
 <li>some changes in the API </li>
 <li>$.keyframe.isSupported() to detect CSS animation support</li>
@@ -10,7 +9,7 @@ comment = """
 <li>support for keyframe redefinition: if you redifine an existing keyframe, running animations will reflect those changes</li>
 </ul>
 """
-githubLink = "https://github.com/Ianus/jQuery.Keyframes"
+githubLink = "https://github.com/Ianus/jquery.css3.transforms"
 downloadSuffix = "/archive/master.zip"
 sourceCode = """
 // SETTERS
