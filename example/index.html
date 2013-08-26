@@ -27,6 +27,7 @@
     	}
     #example pre{
     	margin-top: 25px;
+    	box-shadow: none;
     }	
     #example pre code{
     	font-size: 75%;
@@ -76,7 +77,7 @@
 			</div>
 			<div class="wrapper">
 				<div class="square" id="scale"></div>
-				<pre><code>$("#scale.square").css("scale", 1.5);</code></pre>
+				<pre><code>$("#scale.square").css("scale", 1.2);</code></pre>
 			</div>
 			<div class="wrapper">
 				<div class="square" id="skew"></div>
@@ -92,7 +93,7 @@
 			$( function(){
 			    $("#rotate.square").css("rotate", 45);
 			    $("#skew.square").css("skewY", 15);
-			    $("#scale.square").css("scale", 1.5);
+			    $("#scale.square").css("scale", 1.2);
 			    $("#translate.square").css("translateX", 90);
 			    setInterval(
 			    	function(){$("#animate.square").animate({rotate: "+=360"}, 600);},600

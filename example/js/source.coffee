@@ -2,11 +2,20 @@ title = "jquery.css3.transforms"
 comment = """
 <p>jquery.css3.transforms lets you get and set rotate, translate, scale, skew and perspective via jQuery css and animate methods.
 </p>
+<h1>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h1>
+
 <ul>
-<li>some changes in the API </li>
-<li>$.keyframe.isSupported() to detect CSS animation support</li>
-<li>10% smaller minified version (2.256 kb vs 2.453 kb)</li>
-<li>support for keyframe redefinition: if you redifine an existing keyframe, running animations will reflect those changes</li>
+<li>Cross browser support</li>
+<li>Incremental and decremental setters support</li>
+<li>You can use transformation with jQuery.animate (see the example below)</li>
+</ul><h1>
+<a name="limitations" class="anchor" href="#limitations"><span class="octicon octicon-link"></span></a>Limitations</h1>
+
+<ul>
+<li>Matrix is not supported</li>
+<li>You can only use single valued transformations e.g. translate(x,y) is not supported</li>
+<li>Limited support for measurement units different from px and deg</li>
 </ul>
 """
 githubLink = "https://github.com/Ianus/jquery.css3.transforms"

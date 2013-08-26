@@ -8,7 +8,7 @@ Features
 ======================
 - Cross browser support
 - Incremental and decremental setters support
-- You can use transformation with jQuery.aniamate (see the example below)
+- You can use transformation with jQuery.animate (see the example below)
 
 Limitations
 ======================
